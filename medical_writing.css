@@ -1,0 +1,88 @@
+.services {
+    padding: 70px 1px;
+    background-color: var(--secondary-color);
+}
+
+#medical_writing h2 {
+    text-align: center;
+}
+
+#medical_writing h3 {
+    font-size: 25px;
+}
+
+#medical_writing h4 {
+    font-size: 20px;
+    line-height: 115%;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin: 60px auto;
+    width: 90%;
+}
+
+.service-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-info {
+    position: absolute;
+    text-align: justify;
+    padding: 30px;
+    color: white; 
+    opacity: 0;
+    transition: opacity 0s ease;
+}
+
+.service-box .full-text {
+    display: none; 
+}
+.service-box:hover .full-text {
+    display: block;
+}
+
+.service-box:hover .titel {
+    display: none;
+}
+
+.service-box:hover .service-info {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.service-box:hover::before { 
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+}
+
+
+@media(max-width: 500px) {
+    #medical_writing h2 {
+        font-size: 12vw;
+    }
+}

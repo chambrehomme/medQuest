@@ -1,0 +1,53 @@
+.projekt-container {
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+.projekt-text-container {
+    padding: 40px;
+    max-width: 80%;
+    flex: 1;    
+}
+
+.projekt-text h2 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.projekt-text {
+    padding: 20px;
+    border-radius: 15px;
+    display: none;
+    text-align: left;
+    height: 170px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.projekt-text.active {
+    display: block;
+    opacity: 1;
+}
+
+.nav-buttons button {
+    background: url(../images/arrow.svg) no-repeat;
+    background-size: contain; 
+    width: 20px; 
+    height: 20px; 
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.nav-buttons button:first-child {
+    background-position: center left;
+}
+
+.nav-buttons button:last-child {
+    background-position: center right;
+}
