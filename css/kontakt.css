@@ -1,0 +1,69 @@
+.kontakt-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 2vw; /* Gleicher vertikaler Abstand wie bei .projektablauf */
+    box-sizing: border-box; /* Sicherstellen, dass Padding in der Breite enthalten ist */
+    color: rgba(255, 255, 255, 0.8); /* Heller Text auf dunklem Hintergrund */
+}
+
+.kontakt-links {
+    max-width: calc(50% - 20px); /* Gleicher Abstand zwischen den Spalten wie in .projekt-text */
+}
+
+.kontakt-links h3 {
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.kontakt-links p {
+    margin: 0.5rem 0; /* Konsistenter Abstand zwischen den Kontaktdaten */
+    line-height: 1.6;
+}
+
+.kontakt-rechts {
+    text-align: right;
+    max-width: calc(50% - 20px); /* Gleicher Abstand zwischen den Spalten wie in .projekt-text */
+}
+
+.kontakt-rechts p {
+    margin: 0.5rem 0; /* Konsistenter Abstand für die E-Mail und Telefonnummer */
+}
+
+.kontakt-rechts a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon {
+    width: 2.5vw; /* Größe des Icons */
+    height: 2.5vw; /* Höhe des Icons */
+    margin-left: 10px; /* Abstand zwischen dem Text und dem Icon */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+    vertical-align: middle; /* Vertikale Ausrichtung des Icons */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Vergrößerung beim Hover */
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .kontakt-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 3vw 2vw; /* Sicherstellen, dass der Abstand auf mobilen Geräten konsistent ist */
+    }
+
+    .kontakt-links,
+    .kontakt-rechts {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .kontakt-rechts {
+        text-align: center;
+    }
+}

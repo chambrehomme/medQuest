@@ -1,0 +1,124 @@
+.aboutme {
+    display: flex;
+    align-items: center;
+    padding: 4vw;
+    background-color: var(--main-color);
+    height: auto; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.aboutme::before, 
+.aboutme::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 150px; /* Erhöht die Höhe des Schattens */
+    z-index: -1;
+}
+
+.aboutme::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent); /* Erhöhte Deckkraft */
+}
+
+.aboutme::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent); /* Erhöhte Deckkraft */
+}
+
+#about img {
+    width: auto;
+    height: 50vw;
+    max-width: calc(90% - 30px);
+    margin-left: 2vw;
+    margin-top: 2vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-col {
+    width: calc(100% - 3vw);
+    max-width: 90%;
+    padding: 4vw;
+    position: relative;
+    width: 50%;
+    height: 600px;
+}
+
+.about-col p {
+    text-align: justify;
+    line-height: 175%;
+}
+
+@media(max-width: 800px) {
+    #about_me {
+        padding: 50px 0;
+    }
+
+    #about_me h2 {
+        text-align: center;
+        font-size: 12vw;
+    }
+}
+
+.about_title {
+    margin: 0 0 20px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 30px 0 20px;
+}
+
+.tab-links {
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links.active-link {
+    color: white; /* Ändert die Schriftfarbe des aktiven Tab-Titels auf Weiß */
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+    background-color: white; /* Optional: auch der Unterstrich wird weiß */
+}
+
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--main-brand-color);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links:hover {
+    color: var(--main-brand-color);
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul {
+    margin: 10px 0;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}

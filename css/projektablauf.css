@@ -1,0 +1,71 @@
+.projektablauf {
+    padding: 3vw 0;
+}
+
+.projekt-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3vw; 
+}
+
+.projekt-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projekt-container p:first-of-type {
+    line-height: 1.6;
+    max-width: calc(50% * 2 - 20px - 20px);
+    color: rgba(255, 255, 255, 0.8);
+    margin: 1rem;
+}
+
+.projekt-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Vergrößerung und Schatten */
+    position: relative; /* Für den Hover-Effekt */
+}
+
+.projekt-text {
+    flex: 1 1 calc(50% - 20px);
+    color: white;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Hover-Effekt für die Projekt-Text-Boxen */
+.projekt-text:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.projekt-text h3 {
+    margin: 15px 0 15px 0;
+    text-align: center; /* Zentriert die Überschrift */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.projekt-text p {
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .projekt-text {
+        flex: 1 1 100%;
+    }
+    
+    .projekt-container p:first-of-type {
+        max-width: 100%;
+    }
+}

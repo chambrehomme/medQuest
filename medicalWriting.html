@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>medQuest</title>
-    <link rel="stylesheet" href="general_settings.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="medical_writing.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="projektablauf.css">
-    <link rel="stylesheet" href="referenzen.css">
-    <link rel="stylesheet" href="kontakt.css">
 
+    <link rel="stylesheet" href="/css/generalSettings.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/medicalWriting.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/projektablauf.css">
+    <link rel="stylesheet" href="/css/referenzen.css">
+    <link rel="stylesheet" href="/css/kontakt.css">
+
+    <script src="/move.js" defer></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -20,9 +22,9 @@
 </head>
 
 <body>
-    <!-- ------------------ Header -------------------------->
+    <!--Startpage-->
     <header>
-        <img class="header-image" src="/img/header.jpg" alt="Medical Writing medQuest">
+        <img class="header_image" src="/img/header.jpg" alt="Medical Writing medQuest">
 
         <div class="header_text">
             <div class="navbar">
@@ -34,9 +36,9 @@
                         <span class="material-symbols-rounded">menu</span>
                     </label>
                     <ul>
-                        <li><a href="#medical_writing">Medical Writing</a></li>
+                        <li><a href="#medicalWriting">Medical Writing</a></li>
+                        <li><a href="#projektablauf">Projektablauf</a></li>
                         <li><a href="#about">Dr. med. Kathrin Zimmermann</a></li>
-                        <li><a href="#projektablauf">Projekte</a></li>
                         <li><a href="#referenzen">Referenzen</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
                     </ul>
@@ -46,120 +48,109 @@
                 <h1>Professional <br> Medical Writing</h1>
                 <p class="subheading">Medizinische Texte in einfacher Sprache</p>
             </div>
-
-        </div>
     </header>
 
-    <!-- ------------------ Services -------------------------->
-    <section class="services" id="medical_writing">
-        <h2>Medizinische&shy; Texte</h2>
-        <div class="services-container">
-            <div class="service-box" style="background-image: url('/img/medicalWriting/scull.jpg')"
-                alt="Patientenbroschüre medQuest">
-                <h3 class="titel">Patientenbroschüre</h3>
-                <div class="service-info">
-                    <h4>Patientenbroschüren</h4>
-                    <p class="full-text">Eine gute Patientenbroschüre überzeugt Ärzte, Therapeuten, Betroffene und
-                        Angehörige. Sie informiert und bietet einfache Erklärungen. Sie enthält weiterführende Links und
-                        Adressen. Im Idealfall begleitet sie den Patienten während der ganzen Krankheit.</p>
+    <!--Medical Writing-->
+    <section class="services" id="medicalWriting">
+        <h2>Medizinische Texte</h2>
+        <div class="services-container-wrapper">
+            <div class="services-fade services-fade-left"></div>
+            <div class="services-fade services-fade-right"></div>
+            <button class="scroll-button left" onclick="scrollLeft()">&#9664;</button>
+            <div class="services-container">
+                <div class="service-box" style="background-image: url('/img/medicalWriting/scull.jpg')">
+                    <h3 class="titel">Patientenbroschüre</h3>
+                    <div class="service-info">
+                        <p>Eine gute Patientenbroschüre überzeugt Ärzte, Therapeuten, Betroffene und Angehörige. Sie
+                            informiert und bietet einfache Erklärungen. Sie enthält weiterführende Links und Adressen.
+                            Im Idealfall begleitet sie den Patienten während der ganzen Krankheit.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Experteninterviews</h3>
+                    <div class="service-info">
+                        <p>Gespräche sind lebendig und abwechslungsreich. In der Medizin schlagen Experteninterviews
+                            eine Brücke zwischen den Betroffenen und der Wissenschaft. Alle Seiten profitieren: die
+                            Klinik, der Arzt und der Patient.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Mailings an Ärzte</h3>
+                    <div class="service-info">
+                        <p>Ein Mailing ist ein altbewährtes Marketingtool. Doch die Konkurrenz der neuen Medien ist
+                            groß. Ein Mailing muss überraschen und gleichzeitig interessante Fakten liefern. Der Spagat
+                            zwischen reißerischer Sprache und wissenschaftlichem Inhalt ist hier besonders groß.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Webtexte</h3>
+                    <div class="service-info">
+                        <p>Ihr Auftritt im Internet ist unvollständig. Benötigen Sie Texte, die auch gefunden werden?
+                            SEO, Keywords und Lesbarkeit sind wichtig bei Webtexten. Doch der Leser möchte auch Inhalt,
+                            der fachlich überzeugt. Ich biete Ihnen beides.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Medizinische Lehrmittel</h3>
+                    <div class="service-info">
+                        <p>Ich bin Dozentin für Anatomie und Pathologie am Careum Bildungszentrum in Zürich. Ich liebe
+                            das Unterrichten und kenne die Tücken des Lernens. Dieses Wissen lasse ich beim Verfassen
+                            von medizinischen Lehrmitteln einfließen.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Medienmitteilung Pharma</h3>
+                    <div class="service-info">
+                        <p>Eine Medienmitteilung im Pharma-Bereich ist voll von Fakten. Studienergebnisse mit vielen
+                            Zahlen dominieren. Mein Augenmerk liegt hier besonders auf verständlichen Erklärungen und
+                            Überleitungen.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Überarbeitung Webauftritt</h3>
+                    <div class="service-info">
+                        <p>Die Medizin ist kurzlebig. Behandlungen, Medikamente und Operationstechniken ändern sich
+                            ständig. Ihre Webpage kommt dabei nicht mit und enthält veraltete Informationen. Ich suche
+                            die Fehler und überarbeite Ihre Texte.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Unterlagen Aussendienst</h3>
+                    <div class="service-info">
+                        <p>Sie haben eine neue Studie und möchten diese wirkungsvoll aufarbeiten? Ich finde den USP für
+                            Ihr Produkt und erstelle die Verkaufsargumente. Falls Sie fachliche Unterstützung für die
+                            Aussendienstschulung brauchen, helfe ich gerne.</p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <h3 class="titel">Weitere Möglichkeiten</h3>
+                    <div class="service-info">
+                        <p>Bei weiterem Bedarf eines Textes im medizinischen Bereich, zögern Sie nicht, mich zu
+                            kontaktieren. Wir können gemeinsam besprechen, wie wir Ihre Anforderungen umsetzen können.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/hand.jpg')"
-                alt="Experteninterviews medQuest">
-                <h3 class="titel">Experteninterviews</h3>
-                <div class="service-info">
-                    <h4>Experteninterviews</h4>
-                    <p>Gespräche sind lebendig und abwechslungsreich. In der Medizin schlagen Experteninterviews eine
-                        Brücke zwischen den Betroffenen und der Wissenschaft. Alle Seiten profitieren: die Klinik, der
-                        Arzt und der Patient.</p>
-                </div>
-            </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/keyboard.jpg')"
-                alt="Mailings an Ärzte medQuest">
-                <h3 class="titel">Mailings an Ärzte</h3>
-                <div class="service-info">
-                    <h4>Mailings an Ärzte</h4>
-                    <p>Ein Mailing ist ein altbewährtes Marketingtool. Doch die Konkurrenz der neuen Medien ist gross.
-                        Ein Mailing muss überraschen und gleichzeitig interessante Fakten liefern. Der Spagat zwischen
-                        reisserischer Sprache und wissenschaftlichem Inhalt ist hier besonders gross.</p>
-                </div>
-            </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/workplace.jpg')"
-                alt="Webtexte medQuest">
-                <h3 class="titel">Webtexte</h3>
-                <div class="service-info">
-                    <h4>Webtexte</h4>
-                    <p>Ihr Auftritt im Internet ist unvollständig. Benötigen Sie Texte, die auch gefunden werden?
-                        SEO, Keywords und Lesbarkeit sind wichtig bei Webtexten. Doch der Leser möchte auch Inhalt, der
-                        fachlich überzeugt. Ich biete Ihnen beides.</p>
-                </div>
-            </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/heart.jpg')"
-                alt="Medizinische Lehrmittel medQuest">
-                <h3 class="titel">Medizinische Lehrmittel</h3>
-                <div class="service-info">
-                    <h4>Medizinische Lehrmittel</h4>
-                    <p>Ich bin Dozentin für Anatomie und Pathologie am Careum Bildungszentrum in Zürich. Ich liebe
-                        das Unterrichten und kenne die Tücken des Lernens. Dieses Wissen lasse ich beim Verfassen von
-                        medizinischen Lehrmitteln einfliessen.</p>
-                </div>
-            </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/pill.jpg')"
-                alt="Medienmitteilung medQuest">
-                <h3 class="titel">Medienmitteilung Pharma</h3>
-                <div class="service-info">
-                    <h4>Medienmitteilung Pharma</h4>
-                    <p>Eine Medienmitteilung im Pharma-Bereich ist voll von Fakten. Studienergebnisse mit vielen Zahlen
-                        dominieren. Mein Augenmerk liegt hier besonders auf verständlichen Erklärungen und
-                        Überleitungen.</p>
-                </div>
-            </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/typing.jpg')"
-                alt="Überarbeitung Webauftritt medQuest">
-                <h3 class="titel">Überarbeitung Webauftritt</h3>
-                <div class="service-info">
-                    <h4>Überarbeitung Webauftritt</h4>
-                    <p>Die Medizin ist kurzlebig. Behandlungen, Medikamente und Operationstechniken ändern sich ständig.
-                        Ihre Webpage kommt dabei nicht mit und enthält veraltete Informationen. Ich suche die Fehler und
-                        überarbeite Ihre Texte.</p>
-                </div>
-            </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/pen.jpg')"
-                alt="Unterlagen Aussendienst medQuest">
-                <h3 class="titel">Unterlagen Aussendienst</h3>
-                <div class="service-info">
-                    <h4>Unterlagen Aussendienst</h4>
-                    <p>Sie haben eine neue Studie und möchten diese wirkungsvoll aufarbeiten? Ich finde den USP für Ihr
-                        Produkt und erstelle die Verkaufsargumente. Falls Sie fachliche Unterstützung für die
-                        Aussendienstschulung brauchen, helfe ich gerne.</p>
-                </div>
-            </div>
-            <div class="service-box" style="background-image: url('/img/medicalWriting/fever.jpg')"
-                alt="Weitere Möglichkeiten medQuest">
-                <h3 class="titel">Weitere Möglichkeiten</h3>
-                <div class="service-info">
-                    <h4>Weitere Möglichkeiten</h4>
-                    <p>Bei weiterem Bedarf eines Textes im medizinischen Bereich, zögern Sie nicht, mich zu
-                        kontaktieren. Wir können gemeinsam besprechen, wie wir Ihre Anforderungen umsetzen können.</p>
-                </div>
-            </div>
+            <button class="scroll-button right" onclick="scrollRight()">&#9654;</button>
+        </div>
     </section>
 
-    <!-- ------------------ Ihr Projekt -------------------------->
+    <!--Parallax-Hintergrund-->
+    <div id="background"></div>
+
+    <!--Projektablauf-->
     <section class="projektablauf" id="projektablauf">
         <div class="projekt-container">
+            <h2>Projektablauf</h2>
+            <p>Sie sind im Bereich Medizin oder Gesundheit tätig und benötigen für Ihr Projekt medizinische
+                Texte. Die Zeit drängt und Sie brauchen den Inhalt lieber gestern als morgen. Ihr Medizin-Thema
+                muss für den Leser spannend, aber auch gut verständlich geschrieben sein. Als
+                Medizinjournalistin ist das Professional Medical Writing genau mein Einsatzgebiet. Sie erklären
+                mir Ihr Anliegen, ich recherchiere und schreibe den Text. Im ersten Gespräch frage ich
+                Folgendes:</p>
             <div class="projekt-text-container">
-                <div class="projekt-text active">
-                    <h2>Medical Writing - Wissenschaft einfach erklärt</h2>
-                    <p>Sie sind im Bereich Medizin oder Gesundheit tätig und benötigen für Ihr Projekt medizinische
-                        Texte. Die Zeit drängt und Sie brauchen den Inhalt lieber gestern als morgen. Ihr Medizin-Thema
-                        muss für den Leser spannend, aber auch gut verständlich geschrieben sein. Als
-                        Medizinjournalistin ist das Professional Medical Writing genau mein Einsatzgebiet. Sie erklären
-                        mir Ihr Anliegen, ich recherchiere und schreibe den Text. Im ersten Gespräch frage ich
-                        Folgendes:</p>
-                </div>
                 <div class="projekt-text">
-                    <h2>Wer liest den Text?</h2>
+                    <h3>Wer liest den Text?</h3>
                     <p>Bei medizinischen Fachpersonen wie Ärzten oder Apothekern verwende ich bewusst medizinische
                         Fachbegriffe. Laien möchte ich damit nicht abschrecken. Ich schreibe gerne in einfachen Worten
                         und mit kurzen Sätzen. Das Geheimnis von gutem Medical Writing ist, komplizierte medizinische
@@ -168,7 +159,7 @@
                         verständlich beschrieben sind.</p>
                 </div>
                 <div class="projekt-text">
-                    <h2>Wo steht der Text?</h2>
+                    <h3>Wo steht der Text?</h3>
                     <p>Planen Sie eine Patientenbroschüre oder einen Fachartikel? Brauchen Sie Content für Ihre Website
                         oder ein Lehrbuch für Studierende? Je nachdem, wo der Text hinkommt, braucht es einen anderen
                         Textaufbau. Medizinische Texte sind sehr unterschiedlich. Beim Schreiben denke ich entweder wie
@@ -176,7 +167,7 @@
                         baue gewünschte Keywörter ein und achte auf die Textlänge sowie die Lesbarkeit.</p>
                 </div>
                 <div class="projekt-text">
-                    <h2>Welches Ziel hat der Text?</h2>
+                    <h3>Welches Ziel hat der Text?</h3>
                     <p>Möchten Sie mit Ihrem Text informieren oder etwas verkaufen? Möchten Sie die Leser zu Taten
                         motivieren oder sie zu einem Besuch in Ihre Klinik auffordern? Ein guter Text entsteht dann,
                         wenn Sie Ihr Ziel kennen. Zu viele Absichten auf einmal verwirren den Leser. Patienten, Ärzte
@@ -184,22 +175,20 @@
                         sondern begeistern sich für echte Inhalte über Medizin.</p>
                 </div>
                 <div class="projekt-text">
-                    <h2>Wann brauchen Sie den Text?</h2>
+                    <h3>Wann brauchen Sie den Text?</h3>
                     <p>Normalerweise eilt es, wenn Sie sich bei mir melden. Das ist mir bewusst. Mein Engagement und
                         meine medizinische Fachkompetenz beschleunigen die Abläufe. Die langjährige Erfahrung schlägt
                         sich im Tempo nieder. Ich liefere rasch und zuverlässig, doch ich kann nicht zaubern. Ein guter
                         Text muss auch etwas reifen. Deshalb melden Sie sich bitte frühzeitig!</p>
                 </div>
-
-                <div class="nav-buttons">
-                    <button onclick="prevText()" style="background-image: url('img/left-arrow.png')"></button>
-                    <button onclick="nextText()" style="background-image: url('img/right-arrow.png')"></button>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- ------------------ Kathrin Zimmermann -------------------------->
+    <!--Parallax-Hintergrund-->
+    <div id="background"></div>
+
+    <!--About-->
     <section class="aboutme" id="about">
         <img src="img/kathrin.jpg" alt="Kathrin Zimmermann medical Writer">
         <div class="about-col">
@@ -276,111 +265,52 @@
         </div>
     </section>
 
+    <!--Parallax-Hintergrund-->
+    <div id="background"></div>
 
-    <!-- ------------------ Referenzen------------------------->
+    <!--Referenzen-->
     <section class="referenzen" id="referenzen">
-        <div class="title-container">
+        <div class="referenzen-container">
             <h2>Referenzen</h2>
-        </div>
-        <div class="referenzen">
-            <div class="container">
-                <div class="content">
+            <div class="referenzen-content">
+                <div class="referenzen-text">
                     <h3>"Super Zusammenarbeit - Genau, speditiv und vielfältig - mitdenkend und unkompliziert."</h3>
                     <p>Rolf Ryter - Geschäftsführer <a class="custom-link" href="http://www.medguide.ch/">pharmacom
-                            active marketing gmbh</a>
+                            active marketing gmbh</a></p>
                 </div>
-            </div>
-            <div class="container">
-                <div class="content">
-                    <h3>"Top Umgang mit Experten und Klinikleitern - sympathisches auftreten und hohes Fachwissen."</h3>
+                <div class="referenzen-text">
+                    <h3>"Top Umgang mit Experten und Klinikleitern - sympathisches Auftreten und hohes Fachwissen."</h3>
                     <p>Mark Wettstein - ehem. Director Health Tourism <a class="custom-link"
                             href="https://www.myswitzerland.com/en-ch/planning/about-switzerland/health/">Schweiz
                             Tourismus</a></p>
                 </div>
-            </div>
-            <div class="container ">
-                <div class="content">
+                <div class="referenzen-text">
                     <h3>"Denkt beim Schreiben an die Zielgruppe - liefert schnell und unterstützt da, wo es brennt"</h3>
                     <p>Manuela Altorfer - Mitglied Verlagsleitung <a class="custom-link"
                             href="https://www.careum-verlag.ch/">Careum Verlag</a></p>
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
 
-    <!-- ------------------ Kontakt -------------------------->
-    <footer id="kontakt">
-        <h2>Kontakt</h2>
-        <div class="grid_container">
-            <div id="item1" class="grid_item">
-                <img src="/img/linkedin.png" alt="linkedin Kathrin Zimmermann">
-                <div>
-                    <a href="https://www.linkedin.com/in/dr-med-kathrin-zimmermann/" target="blank">LinkedIn</a>
-                </div>
-            </div>
-            <div id="item2" class="grid_item">
-                <img src="/img/mail.png" alt="E-mail medQuest">
-                <div>
-                    <a href="mailto:info@medquest.ch">E-Mail</a>
-                </div>
-            </div>
-            <div id="item3" class="grid_item">
-                <div class="kontaktdaten">
-                    <p>medQuest GmbH</p>
-                    <p>Dr. med. Kathrin Zimmermann</p>
-                    <p>Speicherstrasse 40</p>
-                    <p>8500 Frauenfeld</p>
-                    <p>+41 79 701 52 64</p>
-                </div>
-            </div>
+    <!--Kontakt-->
+    <footer class="kontakt-container">
+        <div class="kontakt-links">
+            <h2>Kontakt</h2>
+            <p>medQuest GmbH</p>
+            <p>Dr. med. Kathrin Zimmermann</p>
+            <p>Speicherstrasse 40</p>
+            <p>8500 Frauenfeld</p>
+            <p>+41 79 701 52 64</p>
+        </div>
+        <div class="kontakt-rechts">
+            <p>Email: <a href="mailto:info@medquest.ch">info@medquest.ch</a></p>
+            <p>Telefon: +49 123 456 789</p>
+            <a href="https://www.linkedin.com/in/dr-med-kathrin-zimmermann/" target="_blank">
+                <img src="/img/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
         </div>
     </footer>
-
-    <!-- --------------------JavaScript---------------------- -->
-    <script>
-        // Kathrin Zimmermann
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-        // Wer, Wo, Warum, Wann?
-        let currentIndex = 0;
-
-        function showText(index) {
-            const texts = document.querySelectorAll('.projekt-text');
-            const titles = document.querySelectorAll('.projekt-titel');
-
-            texts.forEach(text => text.classList.remove('active')); 1
-            titles.forEach(title => title.classList.remove('active'));
-
-            texts[index].classList.add('active');
-            titles[index].classList.add('active');
-        }
-
-        function prevText() {
-            currentIndex = Math.max(currentIndex - 1, 0);
-            showText(currentIndex);
-        }
-
-        function nextText() {
-            const texts = document.querySelectorAll('.projekt-text');
-            currentIndex = Math.min(currentIndex + 1, texts.length - 1);
-            showText(currentIndex);
-        }
-
-        // Zeige den initialen Text und Titel an
-        showText(currentIndex);
-    </script>
 </body>
 
 </html>
