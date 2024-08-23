@@ -56,3 +56,55 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+// Setze die Höhe der About-Me-Boxen
+document.addEventListener('DOMContentLoaded', function () {
+    const tabContents = document.querySelectorAll('.tab-contents');
+    const aboutTitle = document.querySelector('.about_title');
+    const aboutmeSection = document.querySelector('.aboutme');
+    let maxHeight = 0;
+
+    // Finde die maximale Höhe unter allen Tab-Inhalten
+    tabContents.forEach(content => {
+        const height = content.scrollHeight;
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+
+    // Berechnung der Höhe des gesamten Abschnitts inkl. zusätzlicher Margen oder Paddings
+    const titleHeight = aboutTitle ? aboutTitle.scrollHeight : 0;
+    const sectionPaddingTop = parseFloat(getComputedStyle(aboutmeSection).paddingTop);
+    const sectionPaddingBottom = parseFloat(getComputedStyle(aboutmeSection).paddingBottom);
+    
+    // 40% der Bildschirmhöhe hinzufügen
+    const additionalBuffer = 0.4 * window.innerHeight;
+
+    // Setze die Höhe für den Container
+    aboutmeSection.style.height = (maxHeight + titleHeight + sectionPaddingTop + sectionPaddingBottom + additionalBuffer) + 'px';
+});
+
+// Observer für dynamische Änderungen
+const observer = new MutationObserver(() => {
+    const tabContents = document.querySelectorAll('.tab-contents');
+    const aboutTitle = document.querySelector('.about_title');
+    const aboutmeSection = document.querySelector('.aboutme');
+    let maxHeight = 0;
+
+    tabContents.forEach(content => {
+        const height = content.scrollHeight;
+        if (height > maxHeight) {
+            maxHeight = height;
+        }
+    });
+
+    const titleHeight = aboutTitle ? aboutTitle.scrollHeight : 0;
+    const sectionPaddingTop = parseFloat(getComputedStyle(aboutmeSection).paddingTop);
+    const sectionPaddingBottom = parseFloat(getComputedStyle(aboutmeSection).paddingBottom);
+    const additionalBuffer = 0.04 * window.innerHeight; // 4% der Bildschirmhöhe
+
+    aboutmeSection.style.height = (maxHeight + titleHeight + sectionPaddingTop + sectionPaddingBottom + additionalBuffer) + 'px';
+});
+
+document.querySelectorAll('.tab-contents').forEach(tabContent => {
+    observer.observe(tabContent, { childList: true, subtree: true });
+});

@@ -1,76 +1,57 @@
 .aboutme {
     display: flex;
-    align-items: center;
-    padding: 4vw;
+    padding: 5vw;
     background-color: var(--main-color);
-    height: auto; 
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    height: auto; /* Höhe wird durch JavaScript festgelegt */
 }
 
-.aboutme::before, 
-.aboutme::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 150px; /* Erhöht die Höhe des Schattens */
-    z-index: -1;
-}
-
-.aboutme::before {
-    top: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent); /* Erhöhte Deckkraft */
-}
-
-.aboutme::after {
-    bottom: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent); /* Erhöhte Deckkraft */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
 }
 
 #about img {
-    width: auto;
-    height: 50vw;
-    max-width: calc(90% - 30px);
-    margin-left: 2vw;
-    margin-top: 2vw;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 1 1 25%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 4vw; /* Abstand zwischen Bild und Text */
+    border-radius: 5px;
+    max-height: 80vh;
 }
 
 .about-col {
-    width: calc(100% - 3vw);
-    max-width: 90%;
-    padding: 4vw;
-    position: relative;
-    width: 50%;
-    height: 600px;
-}
-
-.about-col p {
-    text-align: justify;
-    line-height: 175%;
-}
-
-@media(max-width: 800px) {
-    #about_me {
-        padding: 50px 0;
-    }
-
-    #about_me h2 {
-        text-align: center;
-        font-size: 12vw;
-    }
+    flex: 1 1 60%;
+    padding: 2vw 5vw 2vw 0; /* Padding auf der rechten Seite hinzufügen */
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .about_title {
     margin: 0 0 20px;
+    text-align: left;
+}
+
+.about-col p {
+    text-align: justify;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .tab-titles {
     display: flex;
+    flex-wrap: wrap;
     margin: 30px 0 20px;
 }
 
@@ -83,14 +64,13 @@
 }
 
 .tab-links.active-link {
-    color: white; /* Ändert die Schriftfarbe des aktiven Tab-Titels auf Weiß */
+    color: white;
 }
 
 .tab-links.active-link::after {
     width: 50%;
-    background-color: white; /* Optional: auch der Unterstrich wird weiß */
+    background-color: white;
 }
-
 
 .tab-links::after {
     content: '';

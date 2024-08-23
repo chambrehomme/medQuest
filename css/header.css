@@ -79,7 +79,7 @@ nav a:hover{
 
 nav a::after{
     content: '';
-    height: 2px;
+    height: 1px;
     width: 0;
     background: var(--main-brand-color);
 
