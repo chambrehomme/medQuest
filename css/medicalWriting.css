@@ -1,4 +1,5 @@
 .services {
+    height: 100%;
     padding: 3vw 0;
     position: relative;
     z-index: 1; /* Sicherstellen, dass der Abschnitt über dem darüber oder darunter liegenden Abschnitt liegt */
