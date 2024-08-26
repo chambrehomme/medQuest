@@ -1,11 +1,13 @@
 .referenzen {
     padding: 3vw 0;
+    position: relative; /* Um Überlappungen zu vermeiden */
 }
 
 .referenzen-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5vw;
+    box-sizing: border-box;
 }
 
 .referenzen-container h2 {
@@ -63,5 +65,16 @@
 @media screen and (max-width: 768px) {
     .referenzen-text {
         flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-img {
+        max-width: 200px;
+        height: 200px;
+    }
+    
+    .about-img img {
+        object-position: top center;
     }
 }

@@ -91,7 +91,7 @@ a {
 @media (max-width: 480px) {
     #background {
         background-position: center center; /* Bild zentrieren */
-        min-height: 50vw; /* Höhe auf 50% der Bildschirmbreite setzen */
+        min-height: 30vw; /* Höhe auf 50% der Bildschirmbreite setzen */
     }
 }
 

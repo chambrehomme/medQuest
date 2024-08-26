@@ -69,4 +69,8 @@
     .kontakt-links {
         margin-top: 20px;
     }
+
+    .kontakt-wrapper h2 {
+        text-align: center;
+    }
 }
