@@ -17,10 +17,10 @@
 }
 
 .about-img {
-    flex: 0.5; /* Bild nimmt 50% der Breite ein */
+    flex: 0.5; 
     display: flex;
-    align-items: center; /* Vertikale Ausrichtung */
-    justify-content: center; /* Horizontale Ausrichtung */
+    align-items: center; 
+    justify-content: center;
 }
 
 .about-img img {
@@ -51,25 +51,26 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
 }
 
 .tab-links:hover, .active-link {
     background-color: rgba(255, 255, 255, 0.3);
-    color: white;
 }
 
 .tab-contents {
     display: none;
-    color: rgba(255, 255, 255, 0.7);
     line-height: 1.6;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    position: relative; 
+}
+
+.tab-contents:hover {
+    transform: scale(1.05);
 }
 
 .active-tab {
@@ -85,12 +86,12 @@
 
     .about-img {
         margin-top: 20px;
-        flex: none; /* Bild nimmt die volle Breite im Mobilgerät */
+        flex: none;
         width: 100%;
     }
 
     .about-img img {
-        width: 100%; /* Bild nimmt die volle Breite ein */
+        width: 100%; 
         height: auto;
     }
 
