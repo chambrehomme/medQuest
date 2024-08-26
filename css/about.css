@@ -96,17 +96,17 @@
     }
 
     .about-img-container {
-        width: 100%; /* Vollständige Breite auf kleinen Bildschirmen */
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* Bild oben ausrichten */
+        align-items: flex-start;
         margin-top: 20px;
     }
 
     .about-img {
-        height: 300px; /* Höhe für das Bild auf kleinen Bildschirmen */
-        max-width: 300px; /* Breite für das Bild auf kleinen Bildschirmen */
-        border-radius: 50%; /* Rund machen */
+        height: 300px;
+        max-width: 300px;
+        border-radius: 50%;
     }
 
     .about-img img {
