@@ -106,11 +106,11 @@ a {
     }
 
     h2 {
-        font-size: clamp(18px, 2rem, 30px);
+        font-size: clamp(18px, 1.2rem, 30px);
     }
 
     h3 {
-        font-size: clamp(14px, 1.5rem, 20px);
+        font-size: clamp(14px, 1rem, 20px);
     }
 
     p, a {

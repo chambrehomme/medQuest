@@ -1,12 +1,12 @@
 .referenzen {
     padding: 3vw 0;
-    position: relative; /* Um Überlappungen zu vermeiden */
+    position: relative;
 }
 
 .referenzen-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 5vw;
+    padding: 0 3vw;
     box-sizing: border-box;
 }
 

@@ -1,5 +1,5 @@
 .aboutme {
-    padding: 5vw 0;
+    padding: 3vw 0;
     position: relative; 
 }
 
@@ -9,7 +9,7 @@
     flex-wrap: wrap; 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 5.5vw;
+    padding: 0 3vw;
     gap: 3vw;
     box-sizing: border-box;
 }
