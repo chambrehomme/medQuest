@@ -46,7 +46,7 @@
 .about_title {
     text-align: center; 
     margin-bottom: 2rem;
-    color: white;
+    color: var(--text-color);
 }
 
 .intro-text {

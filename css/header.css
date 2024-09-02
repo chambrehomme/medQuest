@@ -48,7 +48,7 @@ header::before {
 }
 
 .header_titel {
-    color: #fff;
+    color: var(--text-color);
     position: absolute;
     left: 3vw;
     bottom: 2vw;
@@ -94,12 +94,12 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 1.5px; 
-    background-color: #fff; 
+    background-color: var(--text-color); 
     transition: width 0.3s ease-in-out; 
 }
 
 nav ul li a:hover {
-    color: #fff; 
+    color: var(--text-color); 
 }
 
 nav ul li a:hover::after {
@@ -151,7 +151,7 @@ nav label {
         display: block;
         position: relative;
         font-size: 2em;
-        color: #fff;
+        color: var(--text-color);
         z-index: 101; 
     }
 
