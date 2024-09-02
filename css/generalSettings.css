@@ -83,22 +83,20 @@ a {
 /* Responsive Anpassung */
 @media (max-width: 768px) {
     #background {
-        background-position: center center; /* Bild immer zentrieren */
-        min-height: 40vw; /* Höhe auf 40% der Bildschirmbreite setzen */
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
     #background {
-        background-position: center center; /* Bild zentrieren */
-        min-height: 30vw; /* Höhe auf 50% der Bildschirmbreite setzen */
+        display: none;
     }
 }
 
 @media(max-width: 1200px) {
     #background {
-        background-position: center center; /* Zentriert das Bild auf kleineren Bildschirmen */
-        min-height: 30vw; /* Höhe auf 30% der Bildschirmbreite setzen */
+        background-position: center center;
+        min-height: 30vw;
     }
 
     h1 {
