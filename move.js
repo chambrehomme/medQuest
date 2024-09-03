@@ -1,41 +1,32 @@
-// medical Writing
+// medicalWriting
 const container = document.querySelector('.services-container');
 let boxes = document.querySelectorAll('.service-box');
-const gap = parseInt(window.getComputedStyle(container).gap) || 0;
 
-function centerElement(index) {
-    const boxWidth = boxes[index].offsetWidth;
-    const boxOffset = boxes[index].offsetLeft;
-
-    const elementCenter = boxOffset - container.offsetLeft - (container.clientWidth / 2) + (boxWidth / 2);
-
-    container.scrollTo({
-        left: elementCenter,
-        behavior: 'smooth'
-    });
+function getScrollAmount() {
+    const boxWidth = boxes[0].offsetWidth;
+    const gap = parseInt(window.getComputedStyle(container).gap, 10) || 0;
+    return boxWidth + gap;
 }
 
-// Scrollen nach rechts
 function scrollRight() {
-    const currentIndex = Math.round(container.scrollLeft / (boxes[0].offsetWidth + gap));
-    const nextIndex = currentIndex + 1;
+    const scrollAmount = getScrollAmount();
+    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
 
-    if (nextIndex < boxes.length) {
-        centerElement(nextIndex);
-    } else {
-        centerElement(0);
+    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+        setTimeout(() => {
+            container.scrollLeft = 0;
+        }, 300); 
     }
 }
 
-// Scrollen nach links
 function scrollLeft() {
-    const currentIndex = Math.round(container.scrollLeft / (boxes[0].offsetWidth + gap));
-    const prevIndex = currentIndex - 1;
+    const scrollAmount = getScrollAmount();
+    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
 
-    if (prevIndex >= 0) {
-        centerElement(prevIndex);
-    } else {
-        centerElement(boxes.length - 1);
+    if (container.scrollLeft === 0) {
+        setTimeout(() => {
+            container.scrollLeft = container.scrollWidth;
+        }, 300); 
     }
 }
 
