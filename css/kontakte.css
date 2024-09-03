@@ -1,76 +1,85 @@
 .kontakt-container {
-    padding: 3vw 0;
+  padding: 3vw 0;
 }
 
 .kontakt-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 3vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3vw;
 }
 
 .kontakt-wrapper h2 {
-    padding: 0.1vw 2vw;
-    text-align: left;
+  padding: 0vw 3vw;
+  text-align: left;
+}
+
+.kontakt-wrapper a {
+  font-size: 30px;
+  line-height: 115%;
+  font-weight: bold;
 }
 
 .kontakt-details-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2vw 2vw;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3vw 3vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
-.kontakt-details, .kontakt-links {
-    flex: 1 1 calc(50% - 20px);
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    position: relative;
-    text-align: left; 
+.kontakt-details,
+.kontakt-links {
+  flex: 1 1 calc(50% - 20px);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
 }
 
 .kontakt-links {
-    text-align: right; 
+  text-align: right;
 }
 
-.kontakt-details p, .kontakt-links p {
-    line-height: 1.5;
-    margin: 0.5rem 0;
+.kontakt-details p,
+.kontakt-links p {
+  line-height: 1.5;
+  margin: 0.5rem 0;
 }
 
 .kontakt-links a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .social-icon {
-    margin-top: 10px;
-    width: 2.5vw;
-    height: 2.5vw;
-    opacity: 0.8;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+  width: 2.5vw;
+  height: 2.5vw;
+  opacity: 0.8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Responsive Anpassungen */
 @media screen and (max-width: 768px) {
-    .kontakt-details, .kontakt-links {
-        flex: 1 1 100%;
-        text-align: center; 
-    }
+  .kontakt-details,
+  .kontakt-links {
+    flex: 1 1 100%;
+    text-align: center;
+  }
 
-    .kontakt-links {
-        margin-top: 20px;
-    }
+  .kontakt-links {
+    margin-top: 20px;
+  }
 
-    .kontakt-wrapper h2 {
-        text-align: center;
-    }
+  .kontakt-wrapper h2 {
+    text-align: center;
+  }
 }
