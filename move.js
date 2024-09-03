@@ -1,41 +1,52 @@
-// medicalWriting
+// medical Writing
 const container = document.querySelector('.services-container');
 let boxes = document.querySelectorAll('.service-box');
-const scrollAmount = boxes[0].offsetWidth + 20; // Box-Breite plus Lückenbreite
+const gap = parseInt(window.getComputedStyle(container).gap) || 0;
 
-// Funktion zum Scrollen nach rechts
+function centerElement(index) {
+    const boxWidth = boxes[index].offsetWidth;
+    const boxOffset = boxes[index].offsetLeft;
+
+    const elementCenter = boxOffset - container.offsetLeft - (container.clientWidth / 2) + (boxWidth / 2);
+
+    container.scrollTo({
+        left: elementCenter,
+        behavior: 'smooth'
+    });
+}
+
+// Scrollen nach rechts
 function scrollRight() {
-    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    const currentIndex = Math.round(container.scrollLeft / (boxes[0].offsetWidth + gap));
+    const nextIndex = currentIndex + 1;
 
-    // Prüfen, ob wir am Ende sind
-    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
-        setTimeout(() => {
-            container.scrollLeft = 0;
-        }, 300); // Kleiner Timeout, damit das Scrollen abgeschlossen wird
+    if (nextIndex < boxes.length) {
+        centerElement(nextIndex);
+    } else {
+        centerElement(0);
     }
 }
 
-// Funktion zum Scrollen nach links
+// Scrollen nach links
 function scrollLeft() {
-    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    const currentIndex = Math.round(container.scrollLeft / (boxes[0].offsetWidth + gap));
+    const prevIndex = currentIndex - 1;
 
-    // Prüfen, ob wir am Anfang sind
-    if (container.scrollLeft === 0) {
-        setTimeout(() => {
-            container.scrollLeft = container.scrollWidth;
-        }, 300); // Kleiner Timeout, damit das Scrollen abgeschlossen wird
+    if (prevIndex >= 0) {
+        centerElement(prevIndex);
+    } else {
+        centerElement(boxes.length - 1);
     }
 }
 
-// Wiederholen der Inhalte durch Klonen
 function cloneItems() {
     const clones = Array.from(boxes).map(box => box.cloneNode(true));
     clones.forEach(clone => container.appendChild(clone));
-    boxes = document.querySelectorAll('.service-box'); // Aktualisieren der Boxen-Liste
+    boxes = document.querySelectorAll('.service-box'); 
 }
 
-cloneItems(); // Einmaliges Klonen für Wiederholung
-cloneItems(); // Zweites Klonen für Sicherheit
+cloneItems(); 
+cloneItems(); 
 
 document.querySelector('.scroll-button.right').addEventListener('click', scrollRight);
 document.querySelector('.scroll-button.left').addEventListener('click', scrollLeft);
