@@ -200,12 +200,13 @@
 @media screen and (max-width: 480px) {
     .services-container {
         gap: 5px;
+        margin-left: 50px;
     }
 
     .service-box {
         min-width: 220px;
         height: auto;
-        padding: 5vw;
+        padding: 3vw;
         text-align: justify; 
         box-sizing: border-box;
     }
