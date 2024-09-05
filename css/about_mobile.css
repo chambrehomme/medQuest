@@ -54,6 +54,7 @@
 .about-col-mobile {
     text-align: center;
     color: rgba(255, 255, 255, 0.8); 
+    margin-bottom: 1rem;
 }
 
 .about_title-mobile h2 {
@@ -96,7 +97,7 @@
 .dropdown-content-mobile {
     display: none;
     padding: 20px;
-    margin-top: 5px;
+    margin-top: 3px;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -113,20 +114,11 @@
         width: 200px;
         height: 200px;
     }
-
-    .about_title-mobile h2 {
-        font-size: 1.25rem;
-    }
-
     .intro-text-mobile {
         font-size: 0.9rem;
     }
 
     .dropdown-btn-mobile {
         padding: 8px;
-    }
-
-    .dropdown-content-mobile p {
-        font-size: 0.85rem;
     }
 }
