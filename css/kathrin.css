@@ -120,7 +120,11 @@
 }
 
 /* Responsive Anpassungen */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 550px) {
+    .aboutme {
+        display: none;
+    }
+
     .about-container {
         flex-direction: column;
         align-items: center;

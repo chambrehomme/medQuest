@@ -58,3 +58,13 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add('active-tab');
     event.currentTarget.classList.add('active-link');
 }
+
+// About me mobile
+function toggleDropdown(tabName) {
+    let content = document.getElementById(tabName);
+    if (content.classList.contains('active-dropdown')) {
+        content.classList.remove('active-dropdown');
+    } else {
+        content.classList.add('active-dropdown');
+    }
+}
