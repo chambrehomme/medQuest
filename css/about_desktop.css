@@ -1,6 +1,10 @@
-.aboutme {
+aboutDesktop {
+    display: block;
     padding: 3vw 0;
-    position: relative; 
+    position: relative;
+    margin-top: clamp(5px, 0.5vh, 10px);
+    margin-bottom: clamp(5px, 0.5vh, 10px);
+    z-index: 1;
 }
 
 .about-container {
@@ -121,13 +125,14 @@
 
 /* Responsive Anpassungen */
 @media screen and (max-width: 550px) {
-    .aboutme {
+    aboutDesktop {
         display: none;
     }
 
     .about-container {
         flex-direction: column;
         align-items: center;
+        display: none;
     }
 
     .about-img-container {

@@ -1,5 +1,10 @@
-.projektablauf {
+projektablauf {
+    display: block;
     padding: 3vw 0;
+    position: relative;
+    margin-top: clamp(5px, 0.5vh, 10px);
+    margin-bottom: clamp(5px, 0.5vh, 10px);
+    z-index: 1;
 }
 
 .projekt-container {

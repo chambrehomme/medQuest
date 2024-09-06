@@ -57,11 +57,13 @@ services h2 {
 .services-fade-left {
     left: 0;
     background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.1));
+    z-index: 100;
 }
 
 .services-fade-right {
     right: 0;
     background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.1));
+    z-index: 100;
 }
 
 .services-container {
@@ -76,8 +78,8 @@ services h2 {
 }
 
 .service-box {
-    min-width: 300px;
-    height: 300px;
+    min-width: 270px;
+    height: 270px;
     background-color: #000000;
     color: var(--text-color);
     display: flex;
@@ -90,6 +92,7 @@ services h2 {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    z-index: 99;
 }
 
 .service-box:hover {
