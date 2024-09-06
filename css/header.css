@@ -37,33 +37,9 @@ header::before {
     z-index: 100;
 }
 
-.navbar {
+.nav {
     display: flex;
     align-items: center;
-}
-
-.logo {
-    max-width: 100px;
-    height: auto;
-}
-
-.header_titel {
-    color: var(--text-color);
-    position: absolute;
-    left: 3vw;
-    bottom: 2vw;
-    margin: 0;
-}
-
-.header_titel h1 {
-    margin: 0;
-}
-
-.subheading {
-    margin: 1vw 0 0 0;
-}
-
-nav {
     position: relative;
 }
 
@@ -106,13 +82,36 @@ nav ul li a:hover::after {
     width: 100%; 
 }
 
-#toggle_button {
-    display: none;
-}
-
 nav label {
     display: none;
     cursor: pointer;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    z-index: 100;
+}
+
+.header_titel {
+    color: var(--text-color);
+    position: absolute;
+    left: 3vw;
+    bottom: 2vw;
+    margin: 0;
+}
+
+.header_titel h1 {
+    margin: 0;
+}
+
+.subheading {
+    margin: 1vw 0 0 0;
+}
+
+
+#toggle_button {
+    display: none;
 }
 
 /* Responsive Design */
@@ -167,6 +166,7 @@ nav label {
     .logo {
         max-width: 80px;
         height: auto;
+        z-index: 100;
     }
 
     .header_titel {

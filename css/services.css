@@ -1,19 +1,27 @@
-.services {
+services {
+    display: block;
     height: 100%;
     padding: 3vw 0;
     position: relative;
-    z-index: 1; 
+    margin-top: clamp(5px, 0.5vh, 10px);
+    margin-bottom: clamp(5px, 0.5vh, 10px);
+    z-index: 1;
 }
 
-.services::before, 
-.services::after {
+services::before, 
+services::after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    height:8vw; 
+    height: 8vw; 
     pointer-events: none;
     z-index: -1; 
+}
+
+services h2 {
+    text-align: center; 
+    margin-bottom: 3vw;
 }
 
 .medical-container {
@@ -56,11 +64,6 @@
     background: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 
-.services h2 {
-    text-align: center; 
-    margin-bottom: 3vw;
-}
-
 .services-container {
     display: flex;
     overflow-x: auto;
@@ -93,37 +96,6 @@
     transform: scale(1.05);
 }
 
-.services-container-wrapper {
-    overflow: hidden;
-}
-
-.services-container {
-    margin: 0 -10px;
-    padding: 1vw;
-}
-
-.service-box {
-    overflow: hidden;
-    padding: 2vw;
-}
-
-.service-info {
-    text-align: left;
-    color: var(--text-color);
-    border-radius: 5px;
-}
-
-.service-box h3 {
-    text-align: center;
-    margin-top: 1vw;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 1vw;
-}
-
-.service-box p {
-    text-align: left;
-}
-
 .scroll-button {
     position: absolute;
     top: 50%;
@@ -145,6 +117,7 @@
     right: 0;
 }
 
+/* Responsive Anpassungen */
 @media screen and (max-width: 1100px) {
     .services-container {
         gap: 15px;

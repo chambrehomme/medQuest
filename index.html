@@ -9,14 +9,14 @@
 
     <title>medQuest - Professional Medical Writing</title>
 
-    <link rel="stylesheet" href="/css/generalSettings.css">
+    <link rel="stylesheet" href="/css/general_settings.css">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/medicalWriting.css">
-    <link rel="stylesheet" href="/css/kathrin.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/about_desktop.css">
     <link rel="stylesheet" href="/css/about_mobile.css">
     <link rel="stylesheet" href="/css/projektablauf.css">
     <link rel="stylesheet" href="/css/referenzen.css">
-    <link rel="stylesheet" href="/css/kontakte.css">
+    <link rel="stylesheet" href="/css/contact.css">
 
     <script src="/move.js" defer></script>
 
@@ -33,26 +33,26 @@
 <body>
     <!--Startpage-->
     <header>
-        <img class="header_image" src="/img/header.jpg" alt="Medical Writing medQuest">
-
         <div class="navbar-container">
-            <div class="navbar">
-                <nav>
-                    <input type="checkbox" id="toggle_button">
-                    <label for="toggle_button">
-                        <span class="material-symbols-rounded">menu</span>
-                    </label>
-                    <ul>
-                        <li><a href="#medicalWriting">Medical Writing</a></li>
-                        <li><a href="#projektablauf">Projektablauf</a></li>
-                        <li><a href="#about">Dr. med. Kathrin Zimmermann</a></li>
-                        <li><a href="#referenzen">Referenzen</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <input type="checkbox" id="toggle_button">
+                <label for="toggle_button">
+                    <span class="material-symbols-rounded">menu</span>
+                </label>
+                <ul>
+                    <li><a href="#services">Medical Writing</a></li>
+                    <li><a href="#projektablauf">Projektablauf</a></li>
+                    <li><a href="#about">Dr. med. Kathrin Zimmermann</a></li>
+                    <li><a href="#referenzen">Referenzen</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
             <img src="/img/logo.png" class="logo" alt="medQuest Logo">
         </div>
+
+        <a href="index.html">
+            <img class="header_image" src="/img/header.jpg" alt="Medical Writing medQuest">
+        </a>
 
         <div class="header_titel">
             <h1>Professional <br> Medical Writing</h1>
@@ -60,8 +60,8 @@
         </div>
     </header>
 
-    <!--Medical Writing-->
-    <section class="services" id="medicalWriting">
+    <!--Services-->
+    <services id="services">
         <div class="medical-container">
             <p>Sie sind im Bereich Medizin oder Gesundheit tätig und benötigen für Ihr Projekt medizinische Texte. Die
                 Zeit
@@ -79,7 +79,7 @@
                 <button class="scroll-button left" onclick="scrollLeft()">&#9664;</button>
                 <div class="services-container">
                     <div class="service-box" style="background-image: url('/img/medicalWriting/scull.jpg')">
-                        <h3 class="titel">Patientenbroschüre</h3>
+                        <h3>Patientenbroschüre</h3>
                         <div class="service-info">
                             <p>Eine gute Patientenbroschüre überzeugt Fachkräfte, Betroffene und Angehörige. Sie
                                 informiert, bietet einfache Erklärungen und verweist auf hilfreiche Ressourcen. Mein
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Experteninterviews</h3>
+                        <h3>Experteninterviews</h3>
                         <div class="service-info">
                             <p>In der Medizin schlagen Experteninterviews eine wichtige Brücke zwischen Betroffenen und
                                 Wissenschaft. In Interviews zu hochkomplexen Themen geben Expertinnen und Experten auf
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Mailings an Fachpersonen</h3>
+                        <h3>Mailings an Fachpersonen</h3>
                         <div class="service-info">
                             <p>Ein Mailing ist ein bewährtes Marketingtool, doch die Konkurrenz durch neue Medien ist
                                 gross. Ein Mailing muss überraschen, interessante Fakten liefern und die Balance
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Webtexte</h3>
+                        <h3>Webtexte</h3>
                         <div class="service-info">
                             <p>Ihr Auftritt im Internet ist unvollständig. Benötigen Sie Texte, die auch gefunden
                                 werden? SEO, Keywords und Lesbarkeit sind wichtig bei Webtexten. Doch die Leserinnen und
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Medizinische Lehrmittel</h3>
+                        <h3>Medizinische Lehrmittel</h3>
                         <div class="service-info">
                             <p>Als Dozentin für Anatomie und Pathologie am Careum Bildungszentrum in Zürich liebe ich
                                 das Unterrichten und kenne die Tücken des Lernens. Dieses Wissen lasse ich beim
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Medienmitteilung Pharma</h3>
+                        <h3>Medienmitteilung Pharma</h3>
                         <div class="service-info">
                             <p>Eine Medienmitteilung im Pharma-Bereich ist voll von Fakten. Studienergebnisse mit vielen
                                 Zahlen dominieren. Mein Augenmerk liegt hier besonders auf verständlichen Erklärungen
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Überarbeitung Webauftritt</h3>
+                        <h3>Überarbeitung Webauftritt</h3>
                         <div class="service-info">
                             <p>Die Medizin ist kurzlebig. Behandlungen, Medikamente und Operationstechniken ändern sich
                                 ständig. Ihre Webpage kommt dabei nicht mit und enthält veraltete Informationen. Ich
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Unterlagen Aussendienst</h3>
+                        <h3>Unterlagen Aussendienst</h3>
                         <div class="service-info">
                             <p>Sie haben eine neue Studie und möchten diese wirkungsvoll aufarbeiten? Ich finde den USP
                                 für
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="service-box">
-                        <h3 class="titel">Weitere Möglichkeiten</h3>
+                        <h3>Weitere Möglichkeiten</h3>
                         <div class="service-info">
                             <p>Für weitere medizinische Texte stehe ich Ihnen jederzeit zur Verfügung und bin offen für
                                 neue Ideen. Gerne besprechen wir gemeinsam Ihre spezifischen Anforderungen und wir diese
@@ -161,7 +161,7 @@
                 <button class="scroll-button right" onclick="scrollRight()">&#9654;</button>
             </div>
         </div>
-    </section>
+    </services>
 
     <!--Parallax-Hintergrund-->
     <div id="background"></div>
@@ -311,7 +311,9 @@
                     wissenschaftliche Assistenzärztin.
                 </p>
                 <div class="dropdown-mobile">
-                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Medizin-mobile')"><h3>Medizin</h3></button>
+                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Medizin-mobile')">
+                        <h3>Medizin</h3>
+                    </button>
                     <div id="Medizin-mobile" class="dropdown-content-mobile">
                         <p>1999 schloss ich das Medizinstudium an der Universität Zürich ab und erwarb den Doktorgrad in
                             Medizin. Nach kurzer Zeit als Assistenzärztin in der Chirurgie zog es mich in die
@@ -321,7 +323,9 @@
                     </div>
                 </div>
                 <div class="dropdown-mobile">
-                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Pharma-mobile')"><h3>Pharma</h3></button>
+                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Pharma-mobile')">
+                        <h3>Pharma</h3>
+                    </button>
                     <div id="Pharma-mobile" class="dropdown-content-mobile">
                         <p>Beim pharmazeutischen Unternehmen Takeda war ich als Produktmanagerin tätig. Bei Vichy von
                             L'Oréal war ich
@@ -331,7 +335,9 @@
                     </div>
                 </div>
                 <div class="dropdown-mobile">
-                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Sprache-mobile')"><h3>Sprache & KI</h3></button>
+                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Sprache-mobile')">
+                        <h3>Sprache & KI</h3>
+                    </button>
                     <div id="Sprache-mobile" class="dropdown-content-mobile">
                         <p>In der dynamischen Welt der Sprache und KI entdeckte ich meine Leidenschaft für das Schreiben
                             und die
@@ -342,7 +348,9 @@
                     </div>
                 </div>
                 <div class="dropdown-mobile">
-                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Bildung-mobile')"><h3>Bildung</h3></button>
+                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Bildung-mobile')">
+                        <h3>Bildung</h3>
+                    </button>
                     <div id="Bildung-mobile" class="dropdown-content-mobile">
                         <p>Als Dozentin am Careum Bildungszentrum in Zürich unterrichte ich Anatomie und Pathologie. Die
                             Arbeit mit
@@ -351,7 +359,9 @@
                     </div>
                 </div>
                 <div class="dropdown-mobile">
-                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Fernsehen-mobile')"><h3>Fernsehen</h3></button>
+                    <button class="dropdown-btn-mobile" onclick="toggleDropdown('Fernsehen-mobile')">
+                        <h3>Fernsehen</h3>
+                    </button>
                     <div id="Fernsehen-mobile" class="dropdown-content-mobile">
                         <p>Die Fernsehsendung Gesundheit Sprechstunde auf SRF1 bot mir einen tiefen Einblick in den
                             Medizinjournalismus.
@@ -408,6 +418,7 @@
                     <p>8500 Frauenfeld</p>
                 </div>
                 <div class="kontakt-links">
+                    <a href="/impressum.html">Impressum</a>
                     <p>Email: <a href="mailto:info@medquest.ch">info@medquest.ch</a></p>
                     <p>Telefon: +41 79 701 52 64</p>
                     <a href="https://www.linkedin.com/in/dr-med-kathrin-zimmermann/" target="_blank">
@@ -417,7 +428,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
