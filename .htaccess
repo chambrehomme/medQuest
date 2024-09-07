@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.www.medquest.ch$
+RewriteRule ^(.*)$ https://www.www.medquest.ch/$1 [R=301,L]
