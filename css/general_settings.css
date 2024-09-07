@@ -114,6 +114,10 @@ a {
         font-size: clamp(14px, 1.8rem, 20px);
     }
 
+    h4 {
+        font-size: clamp(12px, 1.6rem, 18px);
+    }
+
     p, a {
         font-size: clamp(10px, 1.6rem, 14px);
     }
@@ -146,8 +150,16 @@ a {
         font-size: clamp(12px, 1rem, 20px);
     }
 
-    p, a {
-        font-size: clamp(10px, 0.8rem, 20px);
+    h4 {
+        font-size: clamp(10px, 0.9rem, 18px);
+    }
+
+    p {
+        font-size: clamp(10px, 0.8rem, 16px);
+    }
+
+    a {
+        font-size: clamp(10px, 0.8rem, 16px);
     }
 
     .subheading {

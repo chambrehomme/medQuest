@@ -91,8 +91,8 @@
     top: 3vw; 
     right: 3vw; 
     padding: 10px 20px;
-    background-color: var(--primary-color); 
-    color: var(--title-color); 
+    background-color: rgba(255, 255, 255, 0.295); 
+    color: rgba(255, 255, 255, 0.8); 
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -108,5 +108,15 @@
 
 .projekt-text a {
     font-size: 16px;
-    line-height: 115%;
+}
+
+@media screen and (max-width: 768px) {
+    .home-button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .projekt-text a {
+        font-size: 0.8rem;
+    }
 }

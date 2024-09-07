@@ -1,75 +1,79 @@
 .referenzen-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0 3vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 3vw;
 }
 
 .referenzen-container h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .referenzen-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .referenzen-text {
-    flex: 1 1 calc(50% - 20px);
-    padding: 20px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+  flex: 1 1 calc(50% - 20px);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
 .referenzen-text:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px var(--hover-color);
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px var(--hover-color);
 }
 
 .referenzen-text h3 {
-    margin: 0 0 10px 0;
-    text-align: center;
-    line-height: 1.4;
+  margin: 0 0 10px 0;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .referenzen-text p {
-    line-height: 1.5;
-    text-align: center;
-    margin: 0;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
 }
 
 .referenzen-text a.custom-link {
-    text-decoration: none;
-    font-size: 16px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .referenzen-text a.custom-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
-    .referenzen-text {
-        flex: 1 1 100%;
-    }
+  .referenzen-text {
+    flex: 1 1 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .about-img {
-        max-width: 200px;
-        height: 200px;
-    }
-    
-    .about-img img {
-        object-position: top center;
-    }
+  .about-img {
+    max-width: 200px;
+    height: 200px;
+  }
 
-    h3 {
-        font-size: clamp(12px, 1rem, 20px);
-    }
+  .about-img img {
+    object-position: top center;
+  }
+
+  h3 {
+    font-size: clamp(12px, 1rem, 20px);
+  }
+
+  .referenzen-text a.custom-link {
+    font-size: 0.8rem;
+  }
 }
