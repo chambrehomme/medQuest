@@ -68,3 +68,15 @@ function toggleDropdown(tabName) {
         content.classList.add('active-dropdown');
     }
 }
+
+// Home Button
+window.onscroll = function() {
+    var header = document.getElementById("header");
+    var homeButton = document.querySelector(".home-button");
+
+    if (window.pageYOffset > header.offsetHeight) {
+        homeButton.style.display = "flex";
+    } else {
+        homeButton.style.display = "none";
+    }
+};
