@@ -1,13 +1,21 @@
 RewriteEngine On
 
-# HTTP zu HTTPS umleiten
+# HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# non-www zu www umleiten
+# non-www to www
 RewriteCond %{HTTP_HOST} ^medquest\.ch$ [NC]
 RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
 
-# www.www zu www umleiten
-RewriteCond %{HTTP_HOST} !^www.www.medquest.ch$
-RewriteRule ^(.*)$ https://www.medquest.ch/$1 [R=301,L]
+# www.www to www
+RewriteCond %{HTTP_HOST} ^www\.www\.medquest\.ch$ [NC]
+RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
+
+# incorrect subdomains to www
+RewriteCond %{HTTP_HOST} ^(ww|wwww)\.medquest\.ch$ [NC]
+RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
+
+# alles andere to www
+RewriteCond %{HTTP_HOST} !^www\.medquest\.ch$ [NC]
+RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
