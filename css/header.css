@@ -17,7 +17,6 @@ header::before {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 0; 
-    filter: brightness(0.5); 
 }
 
 .header_image {
@@ -70,12 +69,12 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 1.5px; 
-    background-color: var(--text-color); 
+    background-color: var(--title-color); 
     transition: width 0.3s ease-in-out; 
 }
 
 nav ul li a:hover {
-    color: var(--text-color); 
+    color: var(--title-color); 
 }
 
 nav ul li a:hover::after {
@@ -177,14 +176,6 @@ nav label {
 @media (max-width: 480px) {
     header {
         height: 60vh; 
-    }
-
-    .header_titel h1 {
-        font-size: 2em;
-    }
-
-    .subheading {
-        font-size: 1.2em;
     }
 
     .logo {

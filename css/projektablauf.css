@@ -1,31 +1,17 @@
-projektablauf {
-    display: block;
-    padding: 3vw 0;
-    position: relative;
-    margin-top: clamp(5px, 0.5vh, 10px);
-    margin-bottom: clamp(5px, 0.5vh, 10px);
-    z-index: 1;
-}
-
 .projekt-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 3vw; 
+    padding: 0 3vw;
 }
 
 .projekt-title {
     text-align: center;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+    margin-bottom: 2vw;
 }
 
 .projekt-title h2 {
     margin-bottom: 0.5rem;
-    color: var(--text-color);
-}
-
-.projekt-title p {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--title-color)
 }
 
 .projekt-text-container {
@@ -39,30 +25,27 @@ projektablauf {
 
 .projekt-text {
     flex: 1 1 calc(50% - 20px);
-    color: var(--text-color);
     padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;    
     position: relative;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px var(--hover-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projekt-text:hover {
     transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .projekt-text h3 {
     margin: 15px 0 15px 0;
     text-align: center;
-    color: rgba(255, 255, 255, 0.9);
 }
 
 .projekt-text p {
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
     text-align: left;
 }
 
@@ -84,7 +67,8 @@ projektablauf {
         width: 100%;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-bottom: 15px;
     }
 
     .projekt-img {

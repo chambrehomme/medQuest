@@ -1,6 +1,6 @@
 // medicalWriting
 const container = document.querySelector('.services-container');
-let boxes = document.querySelectorAll('.service-box');
+let boxes = document.querySelectorAll('.service-text');
 
 function getScrollAmount() {
     const boxWidth = boxes[0].offsetWidth;
@@ -33,7 +33,7 @@ function scrollLeft() {
 function cloneItems() {
     const clones = Array.from(boxes).map(box => box.cloneNode(true));
     clones.forEach(clone => container.appendChild(clone));
-    boxes = document.querySelectorAll('.service-box'); 
+    boxes = document.querySelectorAll('.service-text'); 
 }
 
 cloneItems(); 
