@@ -9,5 +9,5 @@ RewriteCond %{HTTP_HOST} ^medquest\.ch$ [NC]
 RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
 
 # www.www zu www umleiten
-RewriteCond %{HTTP_HOST} ^www\.www\.medquest\.ch$ [NC]
-RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} !^www.www.medquest.ch$
+RewriteRule ^(.*)$ https://www.www.medquest.ch/$1 [R=301,L]
