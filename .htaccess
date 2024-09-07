@@ -1,13 +1,13 @@
 RewriteEngine On
 
-// http zu https umleiten
-RewriteCond %{HTTPS} !=on
+# HTTP zu HTTPS umleiten
+RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-// non-www zu www umleiten
-RewriteCond %{HTTP_HOST} ^medquest.ch$ [NC]
+# non-www zu www umleiten
+RewriteCond %{HTTP_HOST} ^medquest\.ch$ [NC]
 RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
 
-// www.www zu www umleiten
+# www.www zu www umleiten
 RewriteCond %{HTTP_HOST} ^www\.www\.medquest\.ch$ [NC]
 RewriteRule ^(.*)$ https://www.medquest.ch/$1 [L,R=301]
