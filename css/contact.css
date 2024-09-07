@@ -9,6 +9,13 @@
   text-align: left;
 }
 
+/* Titel */
+.projekt-text a {
+  font-size: 30px;
+  line-height: 115%;
+  font-weight: bold;
+}
+
 .kontakt-wrapper a:hover {
   color: var(--title-color);
 }
