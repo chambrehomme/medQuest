@@ -24,7 +24,7 @@ body {
 
 services, projektablauf, aboutDesktop, referenzen, kontakt, footer {
     display: block;
-    padding: 3vw 0;
+    padding: 2vw 4vw 2vw 4vw;
     position: relative;
     margin-top: clamp(3px, 0.5vh, 10px);
     margin-bottom: clamp(3px, 0.5vh, 10px);
@@ -75,7 +75,6 @@ a {
     color: var(--text-color);
     text-decoration: none;
     position: relative;
-    padding: 3px;
     font-size: 20px;
     font-weight: 500;
 }

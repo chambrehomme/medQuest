@@ -12,7 +12,6 @@ services::after {
 .medical-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 6vw; 
 }
 
 .medical-container h2 {
@@ -51,14 +50,13 @@ services::after {
     transition: transform 0.3s ease, opacity 0.3s ease; 
     box-sizing: border-box;
     padding-top: 2rem;
-    padding-bottom: 2vw;
+    padding-bottom: 2rem;
 }
 
 .services-container-wrapper {
     position: relative;
     width: calc(100% - 40px);
     overflow: visible;
-    padding: 0 3vw; 
     box-sizing: border-box;
     margin: 0 auto;
     z-index: 1;
