@@ -171,7 +171,7 @@ services::after {
 @media screen and (max-width: 480px) {
     .services-container {
         gap: 5px;
-        margin-left: 30px;
+        margin-left: 50px;
     }
 
     .service-text {
