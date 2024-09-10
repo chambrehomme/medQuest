@@ -105,7 +105,7 @@ a {
     background-color: rgb(134, 134, 134); 
     border: none;
     border-radius: 50%; 
-    display: flex !important; 
+    display: flex; 
     justify-content: center; 
     align-items: center; 
     text-align: center;
@@ -119,6 +119,10 @@ a {
 
 .material-symbols-rounded {
     font-size: 60px;
+}
+
+header + .home-button {
+    display: none;
 }
 
 /* Responsive Anpassung */
@@ -157,10 +161,6 @@ a {
     #background {
         display: none;
     }
-
-    .home-button {
-        display: flex !important;
-    }
 }
 
 @media (max-width: 480px) {
@@ -197,6 +197,6 @@ a {
     }
 
     .home-button {
-        display: flex !important;
+        display: none;
     }
 }
