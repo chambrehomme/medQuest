@@ -86,6 +86,19 @@ nav label {
     cursor: pointer;
 }
 
+.mobile-link {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .desktop-link {
+        display: none;
+    }
+    .mobile-link {
+        display: block;
+    }
+}
+
 .logo {
     max-width: 100px;
     height: auto;
