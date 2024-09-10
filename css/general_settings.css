@@ -22,7 +22,7 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-services, projektablauf, aboutDesktop, referenzen, kontakt, footer {
+services, projektablauf, aboutDesktop, referenzen, kontakt, footer, .impressum {
     display: block;
     padding: 2vw 4vw 2vw 4vw;
     position: relative;
@@ -105,7 +105,7 @@ a {
     background-color: rgb(134, 134, 134); 
     border: none;
     border-radius: 50%; 
-    display: flex; 
+    display: flex !important; 
     justify-content: center; 
     align-items: center; 
     text-align: center;
@@ -119,10 +119,6 @@ a {
 
 .material-symbols-rounded {
     font-size: 60px;
-}
-
-header + .home-button {
-    display: none;
 }
 
 /* Responsive Anpassung */
@@ -161,6 +157,10 @@ header + .home-button {
     #background {
         display: none;
     }
+
+    .home-button {
+        display: flex !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -197,6 +197,6 @@ header + .home-button {
     }
 
     .home-button {
-        display: none;
+        display: flex !important;
     }
 }
