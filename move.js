@@ -1,4 +1,4 @@
-// medicalWriting
+// services
 const container = document.querySelector('.services-container');
 let boxes = document.querySelectorAll('.service-text');
 
@@ -36,11 +36,26 @@ function cloneItems() {
     boxes = document.querySelectorAll('.service-text'); 
 }
 
-cloneItems(); 
-cloneItems(); 
-
 document.querySelector('.scroll-button.right').addEventListener('click', scrollRight);
 document.querySelector('.scroll-button.left').addEventListener('click', scrollLeft);
+
+function updateProgressBar() {
+    const totalScrollWidth = container.scrollWidth - container.clientWidth;
+    const scrolledPercentage = (container.scrollLeft / totalScrollWidth) * 100;
+    document.querySelector('.progress-bar').style.width = `${scrolledPercentage}%`;
+}
+
+container.addEventListener('scroll', updateProgressBar);
+
+document.querySelector('.scroll-button.right').addEventListener('click', () => {
+    scrollRight();
+    updateProgressBar();  
+});
+
+document.querySelector('.scroll-button.left').addEventListener('click', () => {
+    scrollLeft();
+    updateProgressBar();
+});
 
 // About me section
 function opentab(tabname) {
